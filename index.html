@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#100812">
+<title>Donde mi boca sueña con besarte ❤️‍🔥</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Montserrat:wght@300;400;500;600&family=Great+Vibes&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --oro: #f4d58d;
+  --rosa: #ff8fbd;
+  --rosa-claro: #ffd1e5;
+  --fondo: #100812;
+  --panel: rgba(35, 14, 35, 0.91);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  overflow-x: hidden;
+  color: #fff0f6;
+  background:
+    radial-gradient(ellipse at 50% 0%, #54213e 0%, transparent 48%),
+    radial-gradient(ellipse at 0% 80%, #27102b 0%, transparent 45%),
+    var(--fondo);
+  font-family: 'Montserrat', sans-serif;
+  padding: 30px 14px 45px;
+  position: relative;
+}
+
+/* Estrellas del fondo */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  background-image:
+    radial-gradient(2px 2px at 12% 18%, #ffe5a6 80%, transparent),
+    radial-gradient(2px 2px at 83% 12%, #ffb9d8 80%, transparent),
+    radial-gradient(1px 1px at 70% 44%, white 80%, transparent),
+    radial-gradient(2px 2px at 20% 67%, #f4d58d 80%, transparent),
+    radial-gradient(1px 1px at 91% 75%, white 80%, transparent),
+    radial-gradient(2px 2px at 43% 90%, #ffb9d8 80%, transparent);
+  background-size: 270px 290px;
+  animation: estrellas 7s ease-in-out infinite alternate;
+}
+
+@keyframes estrellas {
+  from { opacity: .35; }
+  to { opacity: 1; }
+}
+
+.page {
+  width: 100%;
+  max-width: 760px;
+  margin: auto;
+  position: relative;
+  z-index: 1;
+}
+
+.top {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.moon {
+  font-size: 43px;
+  display: inline-block;
+  filter: drop-shadow(0 0 15px #ff9fc8);
+  animation: flotar 4s ease-in-out infinite;
+}
+
+@keyframes flotar {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-7px); }
+}
+
+.eyebrow {
+  color: var(--oro);
+  font-size: 10px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  margin-top: 12px;
+}
+
+.top h2 {
+  font-family: 'Cinzel', serif;
+  font-size: clamp(17px, 4vw, 25px);
+  color: var(--rosa-claro);
+  letter-spacing: 2px;
+  margin-top: 12px;
+  font-weight: 500;
+}
+
+.card {
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(
+    150deg,
+    rgba(67, 27, 58, .93),
+    var(--panel) 45%,
+    rgba(24, 12, 29, .97)
+  );
+  border: 1px solid rgba(244, 213, 141, .65);
+  border-radius: 25px 25px 65px 25px;
+  padding: clamp(23px, 5vw, 48px);
+  box-shadow:
+    0 0 30px rgba(255, 105, 174, .12),
+    0 0 65px rgba(173, 89, 180, .10),
+    inset 0 0 30px rgba(255, 190, 222, .035);
+}
+
+.card::before {
+  content: "🐾";
+  position: absolute;
+  top: 18px;
+  right: 20px;
+  font-size: 30px;
+  opacity: .24;
+  transform: rotate(18deg);
+}
+
+.card::after {
+  content: "🐾";
+  position: absolute;
+  bottom: 22px;
+  left: 17px;
+  font-size: 25px;
+  opacity: .18;
+  transform: rotate(-25deg);
+}
+
+.ornament {
+  text-align: center;
+  color: var(--oro);
+  letter-spacing: 8px;
+  font-size: 13px;
+  margin-bottom: 23px;
+}
+
+h1 {
+  font-family: 'Cinzel', serif;
+  text-align: center;
+  font-size: clamp(21px, 5vw, 34px);
+  font-weight: 600;
+  line-height: 1.65;
+  letter-spacing: 1px;
+  color: var(--oro);
+  text-shadow: 0 0 18px rgba(244, 180, 213, .28);
+  margin-bottom: 20px;
+}
+
+.date {
+  text-align: center;
+  color: #f6b8d6;
+  font-size: 13px;
+  line-height: 1.9;
+  margin-bottom: 27px;
+}
+
+.divider {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  justify-content: center;
+  margin: 24px 0;
+  color: var(--oro);
+}
+
+.divider::before,
+.divider::after {
+  content: "";
+  height: 1px;
+  flex: 1;
+  max-width: 125px;
+  background: linear-gradient(90deg, transparent, var(--oro));
+}
+
+.divider::after {
+  transform: rotate(180deg);
+}
+
+.nickname {
+  font-family: 'Great Vibes', cursive;
+  font-size: clamp(27px, 6vw, 37px);
+  line-height: 1.5;
+  text-align: center;
+  color: var(--rosa-claro);
+  text-shadow: 0 0 15px rgba(255, 143, 189, .25);
+  margin: 18px 0 28px;
+}
+
+.poem p {
+  font-size: clamp(14px, 3.5vw, 16px);
+  line-height: 2.05;
+  text-align: center;
+  font-weight: 300;
+  color: #fff0f6;
+  margin: 0 0 25px;
+}
+
+.poem p:last-child {
+  margin-bottom: 0;
+}
+
+.heart {
+  color: #ff8fbd;
+  font-weight: 600;
+  text-shadow: 0 0 10px rgba(255, 90, 165, .25);
+}
+
+.final {
+  text-align: center;
+  margin-top: 35px;
+  padding: 24px 13px;
+  border-top: 1px solid rgba(244, 213, 141, .35);
+}
+
+.final .cat {
+  font-size: 32px;
+  margin-bottom: 15px;
+  filter: drop-shadow(0 0 12px rgba(255, 143, 189, .45));
+}
+
+.final p {
+  font-family: 'Great Vibes', cursive;
+  font-size: clamp(26px, 6vw, 37px);
+  line-height: 1.6;
+  color: #ffb3d3;
+  text-shadow: 0 0 18px rgba(255, 100, 173, .35);
+}
+
+.signature {
+  text-align: center;
+  font-size: 10px;
+  letter-spacing: 3px;
+  color: var(--oro);
+  margin-top: 25px;
+  line-height: 2;
+}
+
+.paws {
+  text-align: center;
+  font-size: 17px;
+  letter-spacing: 10px;
+  opacity: .65;
+  margin-top: 25px;
+}
+
+.water {
+  height: 2px;
+  margin: 25px auto 0;
+  width: 60%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 143, 189, .8),
+    rgba(244, 213, 141, .7),
+    transparent
+  );
+  filter: blur(1px);
+  animation: reflejo 4s ease-in-out infinite alternate;
+}
+
+@keyframes reflejo {
+  from { opacity: .25; transform: scaleX(.7); }
+  to { opacity: .9; transform: scaleX(1); }
+}
+
+@media (max-width: 480px) {
+  body { padding: 22px 11px 35px; }
+  .card { border-radius: 20px 20px 45px 20px; }
+  .poem p { line-height: 1.95; }
+}
+</style>
+</head>
+
+<body>
+<main class="page">
+
+  <header class="top">
+    <div class="moon">🌙</div>
+    <div class="eyebrow">Un poema nacido de mi corazón</div>
+    <h2>Un domingo escrito para ti</h2>
+  </header>
+
+  <article class="card">
+
+    <div class="ornament">✧ ♡ ✧ 🐾 ✧ ♡ ✧</div>
+
+    <h1>✦ DONDE MI BOCA SUEÑA CON BESARTE ANTES QUE EL SOL TE DESPIERTE ✦</h1>
+
+    <div class="date">
+      Domingo, 11 de octubre de 2026 ☀️🐈❤️‍🔥
+    </div>
+
+    <div class="divider">♡</div>
+
+    <div class="nickname">
+      Mi Adictiva Dulzura de Mis Latidos Eternos, 💋❤️
+    </div>
+
+    <section class="poem">
+
+      <p>
+        Desde temprano, mi amor, mi corazón estará despierto,
+        guardando entre estos versos el beso que tanto deseo darte,
+        ese que comenzaría lentamente sobre tus labios
+        y terminaría convirtiéndose en mil maneras de amarte.
+        <span class="heart">❤️‍🔥</span>
+      </p>
+
+      <p>
+        Quisiera ser el primer suspiro que acaricie tu mañana,
+        el abrazo que te envuelva y no quiera soltarte,
+        y ese pensamiento travieso que te haga sonreír
+        mientras imaginas mis labios muriéndose por besarte.
+        <span class="heart">💋</span>
+      </p>
+
+      <p>
+        Y si lees esto cuando el sol ya esté lejos de tu ventana,
+        recuerda que mi amor no conoce horarios ni distancias:
+        desde que comienza el día hasta que la noche nos reclama,
+        mi alma sigue siendo tuya, mi deseo lleva tu nombre
+        y mi corazón solo encuentra paz cuando te ama.
+        <span class="heart">❤️‍🔥🐈</span>
+      </p>
+
+    </section>
+
+    <div class="divider">✧ ♥ ✧</div>
+
+    <footer class="final">
+      <div class="cat">🐈‍⬛ 💗 🐈</div>
+
+      <p>
+        Feliz domingo, mi preciosa tentación.
+        Si pudiera pedirle un milagro al universo,
+        sería despertar a tu lado y tener toda
+        una eternidad para besarte. 💗
+      </p>
+    </footer>
+
+    <div class="water"></div>
+
+    <div class="signature">
+      HECHO CON AMOR, PARA TU CORAZÓN
+    </div>
+
+    <div class="paws">🐾 ♡ 🐾 ♡ 🐾</div>
+
+  </article>
+
+</main>
+</body>
+</html>
